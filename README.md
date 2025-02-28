@@ -1,4 +1,4 @@
-## Coaching 01 Mar 25 - Ingress Controller with Cert-Manager
+## Coaching Activity 01 Mar 25: Ingress Controller with Cert-Manager
 
 <p>Prerequisites: Access to an EKS cluster with kubectl configured
 
