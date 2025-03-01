@@ -4,14 +4,14 @@ metadata:
   name: yap-echo-app-ingress
   namespace: yap-eks-activity
   annotations:
-    #cert-manager.io/cluster-issuer: "letsencrypt-prod"
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
     external-dns.alpha.kubernetes.io/hostname: "yap-echoapp.sctp-sandbox.com"
 spec:
   ingressClassName: nginx
-  # tls:
-  #   - hosts:
-  #       - yap-echoapp.sctp-sandbox.com
-  #     secretName: yap-tls
+  tls:
+    - hosts:
+        - yap-echoapp.sctp-sandbox.com
+      secretName: yap-tls
   rules:
   - host: "yap-echoapp.sctp-sandbox.com"
     http:
